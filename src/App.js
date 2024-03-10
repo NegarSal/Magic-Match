@@ -70,6 +70,7 @@ function App() {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
+            flipped={card === choiceOne || card === choiceTwo || card.matched}
           />
         ))}
       </div>
